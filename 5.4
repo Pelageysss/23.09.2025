@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+    cout << " Choose size of array. ";
+    int size_arr_n;
+    int size_arr_m;
+    cout<<"lines :";
+    cin >> size_arr_n;
+    cout<<"columns :";
+    cin>>  size_arr_m;
+    int array[size_arr_n][size_arr_m];
+    for (int i = 0; i < size_arr_n; i++) {
+        for (int j = 0; j <size_arr_m; j++) {
+            cout <<array[i][j] << " ";
+        }
+        cout << endl;
+    }
+} 
