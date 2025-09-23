@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+    cout << " Size of array? ";
+    int size_arr;
+    cin >> size_arr;
+    int array[size_arr];
+    int sum=0;
+    for (int i = 0; i < size_arr; i++)
+    {
+        cout << array[i] << " ";
+        sum=sum+array[i];
+    }
+    cout<<"\n"<< "midll schore "<< sum/size_arr;
+}
