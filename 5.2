@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+    cout << " Size of array? ";
+    int size_arr;
+    cin >> size_arr;
+    int array[size_arr];
+    int ch =0;
+    int nch =0;
+    for (int i = 0; i < size_arr; i++)
+    {
+        if (array[i]%2==0)
+        {
+            ch=ch+1;
+        }
+        else 
+        {
+            nch=nch+1;
+        }
+            
+    }
+    cout<<"odd numbers :"<<nch<<"\n";
+    cout<<"even numbers :"<<ch<<"\n";
+}
