@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+    cout << " Size of array? ";
+    int size_arr;
+    cin >> size_arr;
+    int array[size_arr];
+    int max_number =0;
+    int min_number =10000000000;
+    for (int i = 0; i < size_arr; i++)
+    {
+        if (array[i]>max_number)
+        {
+            max_number=array[i];
+        }
+        if (array[i]<min_number) 
+        {
+            min_number=array[i];
+        }
+            
+    }
+    cout<<"max number :"<<max_number<<"\n";
+    cout<<"min number :"<<min_number<<"\n";
+}
