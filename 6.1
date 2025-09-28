@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+    cout<<"How many students are there? : ";
+    int n;
+    cin >> n;
+    if (n <= 0 || n > 1000) {
+        cout << "Number of students must be from 1 to 1000\n";
+        return 1;
+    }
+    cout << "Enter " << n << " numbers (0..9), separated by space:\n";
+    vector<int> stack;
+    int total = 0;
+    for (int i = 0; i < n; i++) {
+        int x;
+        cin >> x;
+        if (!stack.empty() && stack.back() == x) {
+            stack.pop_back();
+            total += 2;
+        }
+        else {
+            stack.push_back(x);
+        }
+    }
+    cout << "Total students who went to KFC: " << total << "\n";
+    return 0;
+}
